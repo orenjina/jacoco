@@ -1,0 +1,1523 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] JaCoCo                                                             [pom]
+[INFO] JaCoCo :: Core                                                     [jar]
+[INFO] JaCoCo :: Report                                                   [jar]
+[INFO] JaCoCo :: Agent RT                                                 [jar]
+[INFO] JaCoCo :: Agent                                                    [jar]
+[INFO] JaCoCo :: Ant                                                      [jar]
+[INFO] JaCoCo :: Command Line Interface                                   [jar]
+[INFO] JaCoCo :: Examples                                                 [jar]
+[INFO] JaCoCo :: Maven Plugin                                    [maven-plugin]
+[INFO] JaCoCo :: Tests                                                    [pom]
+[INFO] JaCoCo :: Test :: Core                                             [jar]
+[INFO] JaCoCo :: Test :: Core :: Validation                               [pom]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 5                        [jar]
+[INFO] JaCoCo :: Test :: Core :: Validation Kotlin                        [jar]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 7                        [jar]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 8                        [jar]
+[INFO] JaCoCo :: Test :: Core :: Validation Groovy                        [jar]
+[INFO] JaCoCo :: Test :: Report                                           [jar]
+[INFO] JaCoCo :: Test :: Agent RT                                         [jar]
+[INFO] JaCoCo :: Test :: Agent                                            [jar]
+[INFO] JaCoCo :: Test :: Ant                                              [jar]
+[INFO] JaCoCo :: Test :: Command Line Interface                           [jar]
+[INFO] JaCoCo :: Test :: Examples                                         [jar]
+[INFO] JaCoCo :: Test :: Maven Plugin                                     [jar]
+[INFO] JaCoCo :: Documentation                                            [jar]
+[INFO] JaCoCo :: Distribution                                             [pom]
+[INFO] root                                                               [pom]
+[INFO] 
+[INFO] --------------------< org.jacoco:org.jacoco.build >---------------------
+[INFO] Building JaCoCo 0.8.4-SNAPSHOT                                    [1/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.build ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.build ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.build ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.build ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/glenn/403c/temp/jacoco/org.jacoco.build && git rev-parse --verify HEAD
+[INFO] Working directory: /Users/glenn/403c/temp/jacoco/org.jacoco.build
+[INFO] Storing buildNumber: dba3e97308a85eab3be7f9cdc3f662ee059b6bf2 at timestamp: 1549061868882
+[INFO] Executing: /bin/sh -c cd /Users/glenn/403c/temp/jacoco/org.jacoco.build && git rev-parse --verify HEAD
+[INFO] Working directory: /Users/glenn/403c/temp/jacoco/org.jacoco.build
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.build ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] ---------------------< org.jacoco:org.jacoco.core >---------------------
+[INFO] Building JaCoCo :: Core 0.8.4-SNAPSHOT                            [2/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 120 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core/target/classes
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core/src/org/jacoco/core/internal/Pack200Streams.java: /Users/glenn/403c/temp/jacoco/org.jacoco.core/src/org/jacoco/core/internal/Pack200Streams.java uses or overrides a deprecated API that is marked for removal.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core/src/org/jacoco/core/internal/Pack200Streams.java: Recompile with -Xlint:removal for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (default) @ org.jacoco.core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --------------------< org.jacoco:org.jacoco.report >--------------------
+[INFO] Building JaCoCo :: Report 0.8.4-SNAPSHOT                          [3/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.report ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.report ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.report ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.report ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.report ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.report ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.report ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 68 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.report/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (default) @ org.jacoco.report ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.report ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.report/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.report ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.report ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.report/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------------< org.jacoco:org.jacoco.agent.rt >-------------------
+[INFO] Building JaCoCo :: Agent RT 0.8.4-SNAPSHOT                        [4/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.agent.rt ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.agent.rt ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.agent.rt ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.agent.rt ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.agent.rt ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.agent.rt ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.agent.rt ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.agent.rt ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.agent.rt ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.agent.rt ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --------------------< org.jacoco:org.jacoco.agent >---------------------
+[INFO] Building JaCoCo :: Agent 0.8.4-SNAPSHOT                           [5/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.agent ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.agent ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.agent ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.agent ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.agent ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.agent ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.agent ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (default) @ org.jacoco.agent ---
+[WARNING] Manifest org.jacoco:org.jacoco.agent:jar:0.8.4-SNAPSHOT : Unused Export-Package instructions: [*.internal*] 
+[WARNING] Manifest org.jacoco:org.jacoco.agent:jar:0.8.4-SNAPSHOT : Unused Import-Package instructions: [org.jacoco.*, org.objectweb.asm.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.agent ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.agent/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.agent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.agent ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ---------------------< org.jacoco:org.jacoco.ant >----------------------
+[INFO] Building JaCoCo :: Ant 0.8.4-SNAPSHOT                             [6/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.ant ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.ant ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.ant ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.ant ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.ant ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.ant ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.ant ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.ant/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.ant ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.ant/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.ant ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.ant ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.ant/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ---------------------< org.jacoco:org.jacoco.cli >----------------------
+[INFO] Building JaCoCo :: Command Line Interface 0.8.4-SNAPSHOT          [7/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.cli ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.cli ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.cli ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.cli ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.cli ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.cli ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.cli/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.cli ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.cli ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.cli ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.cli/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------------< org.jacoco:org.jacoco.examples >-------------------
+[INFO] Building JaCoCo :: Examples 0.8.4-SNAPSHOT                        [8/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.examples ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.examples ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.examples ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.examples ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.examples ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.examples ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.examples ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.examples/target/classes
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.examples/src/org/jacoco/examples/CoreTutorial.java: /Users/glenn/403c/temp/jacoco/org.jacoco.examples/src/org/jacoco/examples/CoreTutorial.java uses or overrides a deprecated API.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.examples/src/org/jacoco/examples/CoreTutorial.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.examples ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.examples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.examples ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.examples ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.examples/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------------< org.jacoco:jacoco-maven-plugin >-------------------
+[INFO] Building JaCoCo :: Maven Plugin 0.8.4-SNAPSHOT                    [9/27]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ jacoco-maven-plugin ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ jacoco-maven-plugin ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ jacoco-maven-plugin ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ jacoco-maven-plugin ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ jacoco-maven-plugin ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.0:helpmojo (help-goal) @ jacoco-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 0 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jacoco-maven-plugin ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jacoco-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.0:descriptor (default-descriptor) @ jacoco-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 11 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jacoco-maven-plugin ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jacoco-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ jacoco-maven-plugin ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --------------------< org.jacoco:org.jacoco.tests >---------------------
+[INFO] Building JaCoCo :: Tests 0.8.4-SNAPSHOT                          [10/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.tests ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.tests ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.tests ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.tests ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.tests ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.tests ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.tests/target/jacoco.exec,includes=null,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.tests
+[INFO] 
+[INFO] ------------------< org.jacoco:org.jacoco.core.test >-------------------
+[INFO] Building JaCoCo :: Test :: Core 0.8.4-SNAPSHOT                   [11/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.core.test/target/jacoco.exec,includes=org.jacoco.core.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.core.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 112 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/target/classes
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/src/org/jacoco/core/internal/analysis/CounterImplTest.java: Some input files use or override a deprecated API.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/src/org/jacoco/core/internal/analysis/CounterImplTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/src/org/jacoco/core/instr/InstrumenterTest.java: Some input files use or override a deprecated API that is marked for removal.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/src/org/jacoco/core/instr/InstrumenterTest.java: Recompile with -Xlint:removal for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------< org.jacoco:org.jacoco.core.test.validation >-------------
+[INFO] Building JaCoCo :: Test :: Core :: Validation 0.8.4-SNAPSHOT     [12/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] ----------< org.jacoco:org.jacoco.core.test.validation.java5 >----------
+[INFO] Building JaCoCo :: Test :: Core :: Validation Java 5 0.8.4-SNAPSHOT [13/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation.java5 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation.java5 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation.java5 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation.java5 ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation.java5 ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation.java5 ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test.validation.java5 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test.validation.java5 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/target/classes
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/src/org/jacoco/core/test/validation/java5/CyclomaticComplexityTest.java: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/src/org/jacoco/core/test/validation/java5/CyclomaticComplexityTest.java uses or overrides a deprecated API.
+[INFO] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/src/org/jacoco/core/test/validation/java5/CyclomaticComplexityTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test.validation.java5 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test.validation.java5 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test.validation.java5 ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java5/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.core.test.validation.java5.ExceptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec
+Running org.jacoco.core.test.validation.java5.FramesTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running org.jacoco.core.test.validation.java5.FinallyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.jacoco.core.test.validation.java5.ControlStructureBeforeSuperConstructorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.jacoco.core.test.validation.java5.AnnotationInitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.jacoco.core.test.validation.java5.ImplicitFieldInitializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.jacoco.core.test.validation.java5.FieldInitializationInTwoConstructorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.jacoco.core.test.validation.java5.EnumSwitchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.jacoco.core.test.validation.java5.CyclomaticComplexityTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running org.jacoco.core.test.validation.java5.BadCycleClassTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.jacoco.core.test.validation.java5.ClassInitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.jacoco.core.test.validation.java5.ExplicitInitialFrameTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.jacoco.core.test.validation.java5.BooleanExpressionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.jacoco.core.test.validation.java5.AnnotationGeneratedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.jacoco.core.test.validation.java5.EnumConstructorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.jacoco.core.test.validation.java5.EnumImplicitMethodsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.jacoco.core.test.validation.java5.ControlStructuresTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.jacoco.core.test.validation.java5.StructuredLockingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.jacoco.core.test.validation.java5.ConstructorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.jacoco.core.test.validation.java5.SyntheticTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.jacoco.core.test.validation.java5.InterfaceClassInitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.jacoco.core.test.validation.java5.SynchronizedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Tests run: 69, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ---------< org.jacoco:org.jacoco.core.test.validation.kotlin >----------
+[INFO] Building JaCoCo :: Test :: Core :: Validation Kotlin 0.8.4-SNAPSHOT [14/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.3.0:compile (compile) @ org.jacoco.core.test.validation.kotlin ---
+[WARNING] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/org/jacoco/core/test/validation/kotlin/targets/KotlinDefaultArgumentsTarget.kt: (19, 19) Parameter 'a' is never used
+[WARNING] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/org/jacoco/core/test/validation/kotlin/targets/KotlinDefaultArgumentsTarget.kt: (19, 36) Parameter 'b' is never used
+[WARNING] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/org/jacoco/core/test/validation/kotlin/targets/KotlinDefaultArgumentsTarget.kt: (22, 36) Parameter 'b' is never used
+[WARNING] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/org/jacoco/core/test/validation/kotlin/targets/KotlinInlineTarget.kt: (24, 1) Expected performance impact of inlining 'public inline fun inlined_top_level(): Unit defined in org.jacoco.core.test.validation.kotlin.targets in file KotlinInlineTarget.kt' is insignificant. Inlining works best for functions with parameters of functional types
+[WARNING] /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/org/jacoco/core/test/validation/kotlin/targets/KotlinInlineTarget.kt: (30, 5) Expected performance impact of inlining 'public final inline fun inlined(): Unit defined in org.jacoco.core.test.validation.kotlin.targets.KotlinInlineTarget' is insignificant. Inlining works best for functions with parameters of functional types
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test.validation.kotlin ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test.validation.kotlin ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test.validation.kotlin ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.kotlin/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.core.test.validation.kotlin.KotlinDataClassTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinWhenExpressionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinTopLevelFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinElvisOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinSafeCastTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinDefaultArgumentsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinSafeCallOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinUnsafeCastOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinLateinitTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinInlineTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinCoroutineTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec
+Running org.jacoco.core.test.validation.kotlin.KotlinNotNullOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+
+Results :
+
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ----------< org.jacoco:org.jacoco.core.test.validation.java7 >----------
+[INFO] Building JaCoCo :: Test :: Core :: Validation Java 7 0.8.4-SNAPSHOT [15/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation.java7 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation.java7 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation.java7 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation.java7 ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation.java7 ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation.java7 ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test.validation.java7 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test.validation.java7 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java7/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test.validation.java7 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java7/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test.validation.java7 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test.validation.java7 ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java7/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.core.test.validation.java7.TryWithResourcesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec
+Running org.jacoco.core.test.validation.java7.StringSwitchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ----------< org.jacoco:org.jacoco.core.test.validation.java8 >----------
+[INFO] Building JaCoCo :: Test :: Core :: Validation Java 8 0.8.4-SNAPSHOT [16/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation.java8 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation.java8 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation.java8 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation.java8 ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation.java8 ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation.java8 ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test.validation.java8 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test.validation.java8 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java8/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test.validation.java8 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java8/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test.validation.java8 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test.validation.java8 ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.java8/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.core.test.validation.java8.BadCycleInterfaceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
+Running org.jacoco.core.test.validation.java8.AnnotationOnLocalVariableTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.jacoco.core.test.validation.java8.InterfaceOnlyDefaultMethodsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.jacoco.core.test.validation.java8.LambdaExpressionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.jacoco.core.test.validation.java8.InterfaceDefaultMethodsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jacoco.core.test.validation.java8.LambdaInInterfaceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.jacoco.core.test.validation.java8.BootstrapMethodReferenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ---------< org.jacoco:org.jacoco.core.test.validation.groovy >----------
+[INFO] Building JaCoCo :: Test :: Core :: Validation Groovy 0.8.4-SNAPSHOT [17/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.core.test.validation.groovy ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.core.test.validation.groovy ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.core.test.validation.groovy ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.6.2:compile (compile) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Using Groovy 2.5.3 to perform compile.
+[INFO] Compiled 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.core.test.validation.groovy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.groovy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.core.test.validation.groovy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.groovy/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.core.test.validation.groovy ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.core.test.validation.groovy ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.core.test.validation.groovy/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.core.test.validation.groovy.GroovyDataClassTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/Users/glenn/.m2/repository/org/codehaus/groovy/groovy/2.5.3/groovy-2.5.3.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -----------------< org.jacoco:org.jacoco.report.test >------------------
+[INFO] Building JaCoCo :: Test :: Report 0.8.4-SNAPSHOT                 [18/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.report.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.report.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.report.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.report.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.report.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.report.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.report.test/target/jacoco.exec,includes=org.jacoco.report.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.report.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.report.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.report.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 48 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.report.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.report.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.report.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.report.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.report.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.report.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ----------------< org.jacoco:org.jacoco.agent.rt.test >-----------------
+[INFO] Building JaCoCo :: Test :: Agent RT 0.8.4-SNAPSHOT               [19/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.agent.rt.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.agent.rt.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.agent.rt.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.agent.rt.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.agent.rt.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.agent.rt.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt.test/target/jacoco.exec,includes=org.jacoco.agent.rt.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.agent.rt.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.agent.rt.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.agent.rt.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.agent.rt.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.agent.rt.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.agent.rt.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.agent.rt.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ------------------< org.jacoco:org.jacoco.agent.test >------------------
+[INFO] Building JaCoCo :: Test :: Agent 0.8.4-SNAPSHOT                  [20/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.agent.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.agent.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.agent.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.agent.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.agent.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.agent.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.agent.test/target/jacoco.exec,includes=org.jacoco.agent.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.agent.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.agent.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.agent.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/glenn/403c/temp/jacoco/org.jacoco.agent.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.agent.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.agent.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.agent.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.agent.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.agent.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------------< org.jacoco:org.jacoco.ant.test >-------------------
+[INFO] Building JaCoCo :: Test :: Ant 0.8.4-SNAPSHOT                    [21/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.ant.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.ant.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.ant.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.ant.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.ant.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.ant.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.ant.test/target/jacoco.exec,includes=org.jacoco.ant.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.ant.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.ant.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.ant.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.ant.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.ant.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.ant.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.ant.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.ant.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.ant.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] -------------------< org.jacoco:org.jacoco.cli.test >-------------------
+[INFO] Building JaCoCo :: Test :: Command Line Interface 0.8.4-SNAPSHOT [22/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.cli.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.cli.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.cli.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.cli.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.cli.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.cli.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.cli.test/target/jacoco.exec,includes=org.jacoco.cli.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.cli.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.cli.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.cli.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.cli.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.cli.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.cli.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.cli.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.cli.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.cli.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ----------------< org.jacoco:org.jacoco.examples.test >-----------------
+[INFO] Building JaCoCo :: Test :: Examples 0.8.4-SNAPSHOT               [23/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.examples.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.examples.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.examples.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.examples.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.examples.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ org.jacoco.examples.test ---
+[INFO] argLine set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/org.jacoco.examples.test/target/jacoco.exec,includes=org.jacoco.examples.*,excludes=org.jacoco.examples.CoreTutorial$TestTarget,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=org.jacoco.examples.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.examples.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.examples.test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/glenn/403c/temp/jacoco/org.jacoco.examples.test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.examples.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.examples.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.examples.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.examples.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Error opening zip file or JAR manifest missing : /Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes
+Error occurred during initialization of VM
+agent library failed to init: instrument
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ----------------< org.jacoco:jacoco-maven-plugin.test >-----------------
+[INFO] Building JaCoCo :: Test :: Maven Plugin 0.8.4-SNAPSHOT           [24/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ jacoco-maven-plugin.test ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ jacoco-maven-plugin.test ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ jacoco-maven-plugin.test ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ jacoco-maven-plugin.test ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ jacoco-maven-plugin.test ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4-SNAPSHOT:prepare-agent (default) @ jacoco-maven-plugin.test ---
+[INFO] invoker.mavenOpts set to -javaagent:/Users/glenn/403c/temp/jacoco/org.jacoco.agent/target/classes=destfile=/Users/glenn/403c/temp/jacoco/jacoco-maven-plugin.test/target/jacoco.exec,includes=org.jacoco.maven.*,excludes=null,exclclassloader=sun.reflect.DelegatingClassLoader:org.jacoco.core.test.TargetLoader:org.jacoco.core.test.InstrumentingLoader,sessionid=jacoco-maven-plugin.test
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jacoco-maven-plugin.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin.test/src
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin.test/src
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jacoco-maven-plugin.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jacoco-maven-plugin.test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin.test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jacoco-maven-plugin.test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ jacoco-maven-plugin.test ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin.test/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] ---------------------< org.jacoco:org.jacoco.doc >----------------------
+[INFO] Building JaCoCo :: Documentation 0.8.4-SNAPSHOT                  [25/27]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce) @ org.jacoco.doc ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.6:run (check-license-header) @ org.jacoco.doc ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ org.jacoco.doc ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ org.jacoco.doc ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (parse-version) @ org.jacoco.doc ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script major = project.getProperties().get("parsedVersion.majorVersion"); [+ 17 omitted line(s)]
+[INFO] 
+[INFO] --- xml-maven-plugin:1.0:transform (transform-generated-doc) @ org.jacoco.doc ---
+[WARNING] The directory /Users/glenn/403c/temp/jacoco/jacoco-maven-plugin/target/generated-site/xdoc, which is a base directory of a ValidationSet or TransformationSet, does not exist.
+[WARNING] No files found for transformation by stylesheet xsl/maven-goal.xsl
+[WARNING] The directory /Users/glenn/403c/temp/jacoco/org.jacoco.cli/target/generated-documentation, which is a base directory of a ValidationSet or TransformationSet, does not exist.
+[WARNING] No files found for transformation by stylesheet xsl/cli.xsl
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ org.jacoco.doc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.doc/src
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.doc/src
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ org.jacoco.doc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ org.jacoco.doc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/glenn/403c/temp/jacoco/org.jacoco.doc/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ org.jacoco.doc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.9:test (default-test) @ org.jacoco.doc ---
+[INFO] Surefire report directory: /Users/glenn/403c/temp/jacoco/org.jacoco.doc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- xml-maven-plugin:1.0:validate (default-validate) @ org.jacoco.doc ---
+[INFO] 
+[INFO] -------------------------< org.jacoco:jacoco >--------------------------
+[INFO] Building JaCoCo :: Distribution 0.8.4-SNAPSHOT                   [26/27]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for root 0.8.4-SNAPSHOT:
+[INFO] 
+[INFO] JaCoCo ............................................. SUCCESS [  1.650 s]
+[INFO] JaCoCo :: Core ..................................... SUCCESS [  4.498 s]
+[INFO] JaCoCo :: Report ................................... SUCCESS [  1.246 s]
+[INFO] JaCoCo :: Agent RT ................................. SUCCESS [  0.475 s]
+[INFO] JaCoCo :: Agent .................................... SUCCESS [  0.352 s]
+[INFO] JaCoCo :: Ant ...................................... SUCCESS [  0.475 s]
+[INFO] JaCoCo :: Command Line Interface ................... SUCCESS [  0.434 s]
+[INFO] JaCoCo :: Examples ................................. SUCCESS [  0.361 s]
+[INFO] JaCoCo :: Maven Plugin ............................. SUCCESS [  2.858 s]
+[INFO] JaCoCo :: Tests .................................... SUCCESS [  0.180 s]
+[INFO] JaCoCo :: Test :: Core ............................. SUCCESS [  1.167 s]
+[INFO] JaCoCo :: Test :: Core :: Validation ............... SUCCESS [  0.065 s]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 5 ........ SUCCESS [  1.200 s]
+[INFO] JaCoCo :: Test :: Core :: Validation Kotlin ........ SUCCESS [  8.077 s]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 7 ........ SUCCESS [  0.984 s]
+[INFO] JaCoCo :: Test :: Core :: Validation Java 8 ........ SUCCESS [  0.883 s]
+[INFO] JaCoCo :: Test :: Core :: Validation Groovy ........ SUCCESS [  1.984 s]
+[INFO] JaCoCo :: Test :: Report ........................... SUCCESS [  0.608 s]
+[INFO] JaCoCo :: Test :: Agent RT ......................... SUCCESS [  0.484 s]
+[INFO] JaCoCo :: Test :: Agent ............................ SUCCESS [  0.173 s]
+[INFO] JaCoCo :: Test :: Ant .............................. SUCCESS [  0.317 s]
+[INFO] JaCoCo :: Test :: Command Line Interface ........... SUCCESS [  0.282 s]
+[INFO] JaCoCo :: Test :: Examples ......................... SUCCESS [  0.232 s]
+[INFO] JaCoCo :: Test :: Maven Plugin ..................... SUCCESS [  0.488 s]
+[INFO] JaCoCo :: Documentation ............................ SUCCESS [  1.224 s]
+[INFO] JaCoCo :: Distribution ............................. FAILURE [  0.026 s]
+[INFO] root ............................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.273 s
+[INFO] Finished at: 2019-02-01T14:58:18-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project jacoco: Could not resolve dependencies for project org.jacoco:jacoco:pom:0.8.4-SNAPSHOT: Could not find artifact org.jacoco:org.jacoco.examples:zip:0.8.4-SNAPSHOT -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :jacoco
